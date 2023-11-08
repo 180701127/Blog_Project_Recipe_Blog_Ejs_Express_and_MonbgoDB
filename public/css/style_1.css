@@ -1,0 +1,178 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:right;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    text-align: right;
+}
+
+nav ul li a{
+    color: #ffffff;;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px; 
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* #about{
+    padding: 80px 0;
+    color: #b6ff00;
+    display: none;
+} */
+
+/* .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub-title{
+    font-size: 100px;
+    font-weight: 900;
+    color: #ffffff;
+} */
+#contact{
+    padding: 50px 0;
+}
+
+.Work-List{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.Work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Work img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #b6ff00);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.Work:hover img{
+    transform:scale(1.1);
+
+}
+
+.Work:hover .layer{
+    height: 100%;
+
+}
+
+.contact-left{
+    flex-basis: 35%;
+    text-align: left;
+    width: 100%;
+    height: 50%;
+
+}
+.contact-left p {
+    margin-top: 30px;
+}
+.contact-right{
+    flex-basis: 60%;
+    text-align: right;
+} 
+
+.contact-left p i {
+    color: #b6ff00;
+    margin-right: 15px;
+    font-size: 25px;
+
+}
+
+.social-icons{
+    margin-top: 30px;
+
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(72, 0, 255);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #b6ff00;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    
+    display: inline-block;
+    background: #808080;
+    text-decoration: none;
+}
+.contact-right form{
+    width: 100%;
+
+}
